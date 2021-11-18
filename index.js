@@ -13,6 +13,7 @@ function getWeather() {
         headers: {
             "Access-Control-Allow-Origin": "*"
         }
+      }
     )
       .then((res) => res.json())
       .then(({ current, location }) => {

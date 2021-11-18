@@ -57,3 +57,16 @@
         width: 30%;
     }
 }
+
+@media (min-width:320px) and (max-width:586px) {
+    .wrapper{
+        width: 100%;
+        font-size: xx-small;        
+    }
+    .input, .country, .button{
+        height: 1.5em;
+    }
+    .city, .time, .degree{
+        font-size: large;
+    }
+}

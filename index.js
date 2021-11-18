@@ -8,7 +8,7 @@ const time = document.querySelector('.time')
 function getWeather() {
   if (input.value !== '' && isNaN(Number(input.value))) {
     fetch(
-      `http://api.weatherstack.com/current?access_key=98d80252ba98f95845714563be3d9a86&query=${input.value},${country.value}`
+      `https://api.weatherstack.com/current?access_key=98d80252ba98f95845714563be3d9a86&query=${input.value},${country.value}`
     )
       .then((res) => res.json())
       .then(({ current, location }) => {
